@@ -26,6 +26,18 @@ public:
         }
     }
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        unordered_map
+        unordered_map<int, int> occurrences;
+        for (auto& v: nums){
+            occurrences[v]++;
+        }
+
+        vector<pair<int, int>> values;
+        for (auto & kv:occurrences){
+            values.push_back(kv);
+        }
+
+        vector<int> ret;
+        qsort(values, 0, values.size() - 1, ret, k);
+        return ret;
     }
 };
