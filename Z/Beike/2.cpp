@@ -13,10 +13,10 @@ public:
     vector<long> FarmerNN(int n, long long m) {
         // write code here
         int index = 0;
-        vector<long> result(n); //初始化用于保存结果的向量
+        vector<long long int> result(n); //初始化用于保存结果的向量
         //2*n-2 为一个周期, m模(2*n-2)的余数是我们需要最后单独考虑的情况
         if (m > 2*n - 2) {
-            long times = m/(2*n-2);
+            long long int times = m/(2*n-2);
             //vector<long> result(n,times*2);
             for (int i = 0; i < n; i++){
                 result[i] = times * 2;
