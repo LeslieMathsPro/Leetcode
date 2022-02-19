@@ -1,10 +1,16 @@
-#include <string>
+
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
 int main(){
-    string s;
-    s = "abd";
-    int i = s[0] - 'a' + 1;
-    cout << i << endl;
+    vector<int> a[4, 0, 1];
+    vector<int> b[4, 0 ,2];
+    int result = 1;
+    if (a == b)
+    {   
+        result = 0;
+    }
+    cout << result << endl;
 }
