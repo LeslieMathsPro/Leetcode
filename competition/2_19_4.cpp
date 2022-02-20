@@ -3,7 +3,7 @@ public:
     long long goodTriplets(vector<int>& nums1, vector<int>& nums2) {
         vector<vector<int>> Nums1, Nums2;
         vector<int> interm1(3, 0);
-        vector<int> interm2(3, 0;)
+        vector<int> interm2(3, 0);
         long long result;
         for (int i = 0; i < nums1.size() - 2; i++){
             for(int j = i + 1; j < nums1.size() - 1; j++){
