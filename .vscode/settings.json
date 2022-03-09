@@ -23,6 +23,8 @@
         "vector": "cpp",
         "__functional_03": "cpp",
         "functional": "cpp",
-        "__locale": "cpp"
+        "__locale": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }
