@@ -25,6 +25,17 @@
         "functional": "cpp",
         "__locale": "cpp",
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "iosfwd": "cpp",
+        "__tree": "cpp",
+        "map": "cpp",
+        "regex": "cpp",
+        "set": "cpp",
+        "span": "cpp",
+        "unordered_set": "cpp",
+        "valarray": "cpp",
+        "ranges": "cpp",
+        "ios": "cpp",
+        "*.tcc": "cpp"
     }
 }
