@@ -52,7 +52,8 @@
         "type_traits": "cpp",
         "__functional_base": "cpp",
         "memory": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "iomanip": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
