@@ -11,23 +11,22 @@
  */
 class Solution {
 public:
-    vector<vector<int>> levelOrder(TreeNode* root) {
+    vector<int> largestValues(TreeNode* root) {
         queue<TreeNode*> que;
         if (root != NULL) que.push(root);
-        vector<vector<int>> result;
-        while (!que.empty()) {
+        vector<int> res;
+        while(!que.empty()) {
             int size = que.size();
-            vector<int> vec;
-            for (int i = 0; i < size; i++){
-                TreeNode* node = que.front();
+            int maxValue = INT_MIN;
+            while(size--) {
+                TreeNode* Node = que.front();
                 que.pop();
-                vec.push_back(node->val);
-                if (node->left) que.push(node->left);
-                if (node->right) que.push(node->right);
+                maxValue = Node->val > maxValue ? Node->val : maxValue;
+                if (Node->left) que.push(Node->left);
+                if (Node->right) que.push(Node->right);
             }
-            result.push_back(vec);
+            res.push_back(maxValue);
         }
-        reverse(result.begin(), result.end());
-        return result;
+        return res;
     }
 };
